@@ -1,0 +1,98 @@
+/* fonts */
+@font-face {
+    font-family: jakarta-bold;
+    src: url(fonts/PlusJakartaSans-Bold.ttf);
+}
+@font-face {
+    font-family: jakarta-light;
+    src: url(fonts/PlusJakartaSans-Light.ttf);
+}
+@font-face {
+    font-family: jakarta-medium;
+    src: url(fonts/PlusJakartaSans-Medium.ttf);
+}
+
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+h3 {
+    font-family: jakarta-bold;
+    font-size: 30px;
+}
+
+p {
+    font-family: jakarta-medium;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.gradient {
+    height: 10px;
+    width: 100%;
+    background: rgb(54,120,244);
+    background: linear-gradient(90deg, rgba(54,120,244,1) 0%, rgba(135,254,248,1) 100%);
+}
+
+.links {
+    margin: 0px 10px;
+    width: 80%;
+}
+
+.content-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 1040px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pp-container {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50px;
+    margin-top: 10px;
+}
+
+.pp-container img {
+    width: 100%;
+}
+
+.block {
+    width: 100%;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px 0px;
+}
+
+.block a {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    justify-content: center;
+    align-items: center;
+}
+
+.block:hover {
+    
+}
+
+.img-container img {
+    width: 40px;
+}
+
+.footer {
+    margin-bottom: 5px;
+}
