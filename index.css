@@ -126,18 +126,19 @@ a {
 
 .gradient-imgs {
     z-index: -2;
-    height: 100vh;
+    height: 0px;
     width: 1040px;
-    position: absolute;
+    position: relative;
+    display: flex;
+    justify-content: center;
 }
 .gradient-imgs img {
-    position: relative;
+    position: absolute;
 }
 
 .gradient-imgs img:nth-child(1) {
     width: 30%;
-    left: -15%;
-    top: 60%;
+    display: flex;
     /* transform: translateX(-90px); */
 }
 .gradient-imgs img:nth-child(2) {
