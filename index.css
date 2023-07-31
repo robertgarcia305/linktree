@@ -101,6 +101,7 @@ a {
 .block {
     width: 100%;
     border: 1px solid black;
+    border-radius: 20px;
     padding: 10px;
     margin: 10px 0px;
     transition: all 0.2s;
@@ -117,7 +118,7 @@ a {
 }
 
 .img-container img {
-    width: 40px;
+    width: 35px;
 }
 
 .footer {
