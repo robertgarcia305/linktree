@@ -39,7 +39,7 @@ a {
 }
 
 .gradient {
-    height: 10px;
+    height: 8px;
     width: 100%;
     background: rgb(54,120,244);
     background: linear-gradient(90deg, rgba(54,120,244,1) 0%, rgba(135,254,248,1) 100%);
@@ -48,6 +48,14 @@ a {
 .links {
     margin: 0px 10px;
     width: 80%;
+}
+
+.page-wrap {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 .content-wrap {
@@ -104,8 +112,8 @@ a {
 .block:hover {
     border: 1px solid rgb(48, 187, 175);
     box-shadow: 6px 12px 69px -22px rgba(0,0,0,0.75);
--webkit-box-shadow: 6px 12px 69px -22px rgba(0,0,0,0.75);
--moz-box-shadow: 6px 12px 69px -22px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 6px 12px 69px -22px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 12px 69px -22px rgba(0,0,0,0.75);
 }
 
 .img-container img {
@@ -118,16 +126,31 @@ a {
 
 .gradient-imgs {
     z-index: -2;
-    height: 0px;
+    height: 100vh;
+    width: 1040px;
+    position: absolute;
+}
+.gradient-imgs img {
     position: relative;
 }
 
 .gradient-imgs img:nth-child(1) {
-    width: 500px;
-    transform: translate(10px 20px);
+    width: 30%;
+    left: -15%;
+    top: 60%;
+    /* transform: translateX(-90px); */
+}
+.gradient-imgs img:nth-child(2) {
+    width: 40%;
+    /* transform: translateX(90%);
+    transform: translateY(90%); */
 }
 
 @media (max-width: 1040px) {
+    .content-wrap {
+        width: 100%;
+    }
+
     .content {
         height: 100vh;
         border: 3px solid black;
